@@ -22,7 +22,7 @@ export default function Contact({ email, links }: Props) {
           aria-label="Descargar CV"
           title="Descargar CV"
         >
-          <img  className="icon-btn" src="/descarga-cv.svg" alt="Descargar curriculum vitae" width={44} height={44} />
+          <img  className="icon-btn" src={`${import.meta.env.BASE_URL}/descarga-cv.svg`} alt="Descargar curriculum vitae" width={44} height={44} />
         </a>
       </div>
     </section>
