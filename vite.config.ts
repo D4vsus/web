@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: 'D4vsus-web',
+  base: '/web/',
   server: 
   {
     port: 80,
