@@ -16,7 +16,7 @@ export const PROFILE: Profile = {
   links: [
     { label: "GitHub", href: "https://github.com/D4vsus/D4vsus" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/david-jesus-fernandez-olmos-556130306" },
-    { label: "CV", href: "/DAVID-JESUS-FERNANDEZ-OLMOS-CV.pdf" },
+    { label: "CV", href: `${import.meta.env.BASE_URL}/cv-david-fernandez.pdf` },
   ],
 };
 

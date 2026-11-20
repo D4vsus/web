@@ -17,7 +17,7 @@ export default function Contact({ email, links }: Props) {
         ))}
         <a
           className="icon-btn"
-          href="/cv-david-fernandez.pdf"
+          href={`${import.meta.env.BASE_URL}/cv-david-fernandez.pdf`}
           download
           aria-label="Descargar CV"
           title="Descargar CV"
