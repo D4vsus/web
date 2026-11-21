@@ -1,4 +1,5 @@
 import type { Link } from "../types";
+import Icon from "../icons/DescargaCv"
 
 interface Props {
   email: string;
@@ -17,12 +18,12 @@ export default function Contact({ email, links }: Props) {
         ))}
         <a
           className="icon-btn"
-          href={`${import.meta.env.BASE_URL}/cv-david-fernandez.pdf`}
+          href={`${import.meta.env.BASE_URL}cv-david-fernandez.pdf`}
           download
           aria-label="Descargar CV"
           title="Descargar CV"
         >
-          <img  className="icon-btn" src={`${import.meta.env.BASE_URL}/descarga-cv.svg`} alt="Descargar curriculum vitae" width={44} height={44} />
+          <Icon size={33} className="icon" />
         </a>
       </div>
     </section>

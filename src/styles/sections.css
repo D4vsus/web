@@ -78,7 +78,14 @@
   border: 1px solid var(--line);
   border-radius: 10px;
   color: var(--ink);
+  filter: drop-shadow(0 0 10px #fff) 
+            drop-shadow(0 0 30px #a1ffe3)
+            drop-shadow(0 0 70px #50ffca)
+            drop-shadow(0 0 120px #ffffff)
 }
 .icon-btn:hover { border-color: var(--ink); }
+.icon {
+  fill: var(--accent);
+}
 
 @media (prefers-reduced-motion: reduce) { .ch { transition: none; } }
