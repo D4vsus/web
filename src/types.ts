@@ -1,3 +1,5 @@
+import { Icon } from "@tabler/icons-react";
+
 export type Theme = "light" | "dark";
 
 export type Category = "Data-Mining" | "Herramientas" | "Desktop-dev";
@@ -20,6 +22,7 @@ export interface Skill {
 export interface Link {
   label: string;
   href: string;
+  icon: string | Icon;
 }
 
 export interface Profile {

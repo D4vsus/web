@@ -1,4 +1,9 @@
 import type { Filter, Profile, Project } from "../types";
+import {
+  IconBrandGithub,
+  IconBrandLinkedin,
+  IconBrandX,
+} from "@tabler/icons-react";
 
 export const PROFILE: Profile = {
   lines: ["David","J.", "Fernández","Olmos"],
@@ -14,9 +19,10 @@ export const PROFILE: Profile = {
   ],
   email: "davsus@protonmail.com",
   links: [
-    { label: "GitHub", href: "https://github.com/D4vsus/D4vsus" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/david-jesus-fernandez-olmos-556130306" },
-    { label: "CV", href: `${import.meta.env.BASE_URL}cv-david-fernandez.pdf` },
+    { label: "GitHub", href: "https://github.com/D4vsus/D4vsus", icon: IconBrandGithub },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/david-jesus-fernandez-olmos-556130306", icon: IconBrandLinkedin },
+    { label: "X (Twitter)", href: "https://x.com/D4vsus", icon: IconBrandX},
+    { label: "CV", href: `${import.meta.env.BASE_URL}cv-david-fernandez.pdf`, icon: "CV"},
   ],
 };
 
