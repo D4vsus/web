@@ -31,7 +31,7 @@ export const CATS: Filter[] = ["Todos", "Data-Mining", "Herramientas", "Desktop-
 export const PROJECTS: Project[] = [
   {
     title: "JT-2",
-    description: "Terminal CLI montada desde cero con Java swing.",
+    description: "Emulador de terminal montada desde cero con Java swing.",
     stack: "Java",
     year: 2024,
     category: "Desktop-dev",
@@ -39,7 +39,7 @@ export const PROJECTS: Project[] = [
   },
   {
     title: "MNIST, reconocimiento de números mediante redes neuronales convolucionales(CNN)",
-    description: "Lista de tareas con etiquetas, filtros y atajos de teclado. Los datos se guardan en el navegador.",
+    description: "Reconocimiento de números escritos a mano por medio de redes convolucionales.",
     stack: "Java(Front), Python(Back)",
     year: 2025,
     category: "Data-Mining",
@@ -51,6 +51,6 @@ export const PROJECTS: Project[] = [
     stack: "Java",
     year: 2025,
     category: ["Data-Mining", "Herramientas"],
-    url: "https://github.com/D4vsus/mnist-example",
+    url: "https://github.com/D4vsus/Seal-Translator",
   },
 ];
