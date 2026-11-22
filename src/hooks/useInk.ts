@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import type { RefObject } from "react";
 
-// Engrosa las letras (.ch) del elemento según la cercanía del puntero.
 export function useInk(ref: RefObject<HTMLElement>): void {
   useEffect(() => {
     const el = ref.current;
