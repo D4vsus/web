@@ -45,7 +45,10 @@ a { color: inherit; }
   background: var(--accent); color: var(--on-accent); font: inherit; font-weight: 700;
   text-decoration: none; cursor: pointer;
 }
-.btn:hover { filter: brightness(1.08); }
+.btn:hover { filter: brightness(1.08); filter: drop-shadow(0 0 10px #fff) 
+            drop-shadow(0 0 30px #a1ffe3)
+            drop-shadow(0 0 70px #50ffca)
+            drop-shadow(0 0 120px #ffffff) }
 .ghost {
   border: 1px solid var(--line); background: transparent; color: var(--ink);
   padding: .5rem .9rem; border-radius: 999px; font: inherit; font-weight: 500; cursor: pointer;

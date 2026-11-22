@@ -18,7 +18,7 @@ export default function Contact({ email, links }: Props) {
             const Icon = icon && typeof icon !== "string" ? icon : null;
             const text = typeof icon === "string" ? icon : l.label;
           return(
-            <a href={l.href} key={l.label} target="_blank" rel="noopener noreferrer" aria-label={l.label} >
+            <a className="icon-networks" href={l.href} key={l.label} target="_blank" rel="noopener noreferrer" aria-label={l.label} >
               {Icon ? <Icon size={28} stroke={1.5} aria-hidden="true" /> : text}
             </a>
           )
