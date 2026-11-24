@@ -25,7 +25,7 @@ export default function Hero({ lines, role, email }: Props) {
             ))}
           </h1>
         </div>
-        <img className="logo" alt="D4" src={`${import.meta.env.BASE_URL}/favicon.svg`}></img>
+        <img className="logo" alt="D4" src={`${import.meta.env.BASE_URL}favicon.svg`}></img>
       </div>
       <p className="role">{role}</p>
       <div className="actions">
