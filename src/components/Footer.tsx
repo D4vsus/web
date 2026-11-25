@@ -3,5 +3,5 @@ interface Props {
 }
 
 export default function Footer({ name }: Props) {
-  return <footer className="foot">© 2026 {name}</footer>;
+  return <footer className="foot">© {new Date().getFullYear()} {name}</footer>;
 }

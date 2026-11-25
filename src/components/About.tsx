@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import type { Skill } from "../types";
+import { useTranslation } from 'react-i18next';
 
 interface Props {
   paragraphs: string[];
@@ -7,9 +8,11 @@ interface Props {
 }
 
 export default function About({ paragraphs, skills }: Props) {
+  const { t } = useTranslation('translation', { keyPrefix: 'about' });
+
   return (
     <section className="sec" id="sobre-mi">
-      <h2 className="h2">Sobre mí</h2>
+      <h2 className="h2">{t('aboutMe')}</h2>
       <div className="about">
         <div>
           {paragraphs.map((t, i) => (

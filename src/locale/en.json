@@ -1,0 +1,49 @@
+{
+    "meta": {
+        "title": "David Fernández | Software Developer and Gen AI/ML Engineer",
+        "description": "Development portfolio, software and artificial intelligence projects."
+    },
+
+    "header": {
+        "projects": "Projects",
+        "aboutMe": "About me",
+        "contact": "Contact",
+        "main": "Home",
+        "lightTheme":"Light theme",
+        "darkTheme":"Dark theme"
+    },
+
+    "about":{
+        "aboutMe":"About me",
+        "profile": {
+            "lines": ["David","J.", "Fernández","Olmos"],
+            "role": "Fullstack Developer and ML/Gen AI Engineer.",
+            "about": [
+                "I've always been interested in computing, and I've worked hard to get to where I am.",
+                "Whenever I start a task, I don't stop until it's finished."
+            ],
+            "skills": [
+                { "label": "Languages", "value": "TypeScript, JavaScript, HTML, CSS, Java, Python, SQL" },
+                { "label": "Frameworks", "value": "Springboot, Angular, React, Flask, Keras, Pandas, LangChain, PGvector" },
+                { "label": "Tools", "value": "Git, Android Studio, IntelliJ, Docker, Grafana" },
+                { "label": "Databases", "value": "PostgreSQL, Oracle" },
+                { "label": "Spoken languages", "value": "English (B2 - Upper Intermediate), Spanish (native)"}
+            ]
+        }
+    },
+
+    "contact":{
+        "contact": "Contact",
+        "downloadCv": "Download CV"
+    },
+
+    "hero":{
+        "viewProjects": "View projects",
+        "writeMe": "Get in touch"
+    },
+
+    "project":{
+        "project": "Projects",
+        "filterGroup": "Filter projects"
+    }
+}

@@ -1,12 +1,26 @@
-import type { Filter, Profile, Project } from "../types";
+import type { TFunction } from "i18next";
+import type { Filter, Link, Profile } from "../types";
+
 import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconBrandX,
 } from "@tabler/icons-react";
 
+//Social Network
+export const GITHUB: Link = { label: "GitHub", href: "https://github.com/D4vsus/D4vsus", icon: IconBrandGithub };
+export const LINKEDIN: Link = { label: "LinkedIn", href: "https://www.linkedin.com/in/david-jesus-fernandez-olmos-556130306", icon: IconBrandLinkedin };
+export const X_TWITTER: Link = { label: "X (Twitter)", href: "https://x.com/D4vsus", icon: IconBrandX};
+export const CV: Link = { label: "CV", href: `${import.meta.env.BASE_URL}cv-david-fernandez.pdf`, icon: "CV"};
+
+//Email
+export const EMAIL: string = "davsus@protonmail.com";
+
+//Lang
+export const LANG = [{ code: "es", label: "Español" }, { code: "en", label: "English" },]
+
 export const PROFILE: Profile = {
-  lines: ["David","J.", "Fernández","Olmos"],
+  lines: ["David", "J.", "Fernández", "Olmos"],
   role: "Desarrollador Fullstack e Ingeniero de ML/Gen AI.",
   about: [
     "Desde siempre me he interesado por la informática y me he esforzado para llegar a donde estoy.",
@@ -17,40 +31,16 @@ export const PROFILE: Profile = {
     { label: "Frameworks", value: "Springboot, Angular, React, Flask, Keras, Pandas" },
     { label: "Herramientas", value: "React, Git, Android Studio, InteliJ, Docker, Grafana" },
   ],
-  email: "davsus@protonmail.com",
-  links: [
-    { label: "GitHub", href: "https://github.com/D4vsus/D4vsus", icon: IconBrandGithub },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/david-jesus-fernandez-olmos-556130306", icon: IconBrandLinkedin },
-    { label: "X (Twitter)", href: "https://x.com/D4vsus", icon: IconBrandX},
-    { label: "CV", href: `${import.meta.env.BASE_URL}cv-david-fernandez.pdf`, icon: "CV"},
-  ],
+  email: EMAIL,
+  links: [GITHUB, LINKEDIN, X_TWITTER, CV],
 };
 
-export const CATS: Filter[] = ["Todos", "Data-Mining", "Herramientas", "Desktop-dev"];
+export function getProfile(t: TFunction): Profile{
+  return {
+    ...(t("about.profile", { returnObjects: true }) as Omit<Profile, "email" | "links">),
+    email: EMAIL,
+    links: [GITHUB, LINKEDIN, X_TWITTER, CV],
+  } as Profile;
+}
 
-export const PROJECTS: Project[] = [
-  {
-    title: "JT-2",
-    description: "Emulador de terminal montada desde cero con Java swing.",
-    stack: "Java",
-    year: 2024,
-    category: "Desktop-dev",
-    url: "https://github.com/D4vsus/JT-2",
-  },
-  {
-    title: "MNIST, reconocimiento de números mediante redes neuronales convolucionales(CNN)",
-    description: "Reconocimiento de números escritos a mano por medio de redes convolucionales.",
-    stack: "Java(Front), Python(Back)",
-    year: 2025,
-    category: "Data-Mining",
-    url: "https://github.com/D4vsus/mnist-example",
-  },
-  {
-    title: "Seal-Translator",
-    description: "Conversor de archivos de CSV a ARFF, y vista y manipulación de datasets.",
-    stack: "Java",
-    year: 2025,
-    category: ["Data-Mining", "Herramientas"],
-    url: "https://github.com/D4vsus/Seal-Translator",
-  },
-];
+export const CATS: Filter[] = ["Todos", "Data-Mining", "Herramientas", "Desktop-dev"];

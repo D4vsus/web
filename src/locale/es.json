@@ -1,0 +1,49 @@
+{
+    "meta": {
+        "title": "David Fernández | Desarrollador de software e ingeniero de Gen AI/ML",
+        "description": "Portfolio de desarrollo, proyectos de software e inteligencia artificial."
+    },
+
+    "header": {
+        "projects": "Proyectos",
+        "aboutMe": "Sobre mí",
+        "contact": "Contacto",
+        "main": "Principal",
+        "lightTheme":"Tema claro",
+        "darkTheme":"Tema Oscuro"
+    },
+
+    "about":{
+        "aboutMe":"Sobre mí",
+        "profile": {
+            "lines": ["David","J.", "Fernández","Olmos"],
+            "role": "Desarrollador fullstack e Ingeniero de ML/Gen AI.",
+            "about": [
+                "Desde siempre me he interesado por la informática y me he esforzado para llegar a donde estoy.",
+                "Siempre que inicio una tarea, no paro hasta acabarla."
+            ],
+            "skills": [
+                { "label": "Lenguajes", "value": "TypeScript, JavaScript, HTML, CSS, Java, Python, SQL" },
+                { "label": "Frameworks", "value": "Springboot, Angular, React, Flask, Keras, Pandas, LangChain, PGvector" },
+                { "label": "Herramientas", "value": "Git, Android Studio, IntelliJ, Docker, Grafana" },
+                { "label": "BBDD", "value": "PostgreSQL, Oracle" },
+                { "label": "Idiomas", "value": "Inglés (B2 - Intermedio alto), Español (Nativo)"}
+            ]
+        }
+    },
+
+    "contact":{
+        "contact": "Contacto",
+        "downloadCv": "Descargar CV"
+    },
+
+    "hero":{
+        "viewProjects": "Ver proyectos",
+        "writeMe": "Escríbeme"
+    },
+
+    "project":{
+        "project": "Proyectos",
+        "filterGroup": "Filtrar proyectos"
+    }
+}

@@ -5,15 +5,6 @@ export type Theme = "light" | "dark";
 export type Category = "Data-Mining" | "Herramientas" | "Desktop-dev";
 export type Filter = "Todos" | Category;
 
-export interface Project {
-  title: string;
-  description: string;
-  stack: string;
-  year: number;
-  category: Category[] | Category;
-  url: string;
-}
-
 export interface Skill {
   label: string;
   value: string;
@@ -32,4 +23,15 @@ export interface Profile {
   skills: Skill[];
   email: string;
   links: Link[];
+}
+
+export type Localized = Record<string, string>;
+
+export interface Project {
+  title: string;
+  description: Localized;
+  stack: string;
+  year: number;
+  categories: string[];
+  url: string;
 }

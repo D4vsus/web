@@ -1,0 +1,7 @@
+[
+    { "label": "Lenguajes", "value": "TypeScript, JavaScript, HTML, CSS, Java, Python, SQL" },
+    { "label": "Frameworks", "value": "Springboot, Angular, React, Flask, Keras, Pandas, LangChain, PGvector" },
+    { "label": "Herramientas", "value": "Git, Android Studio, IntelliJ, Docker, Grafana" },
+    { "label": "BBDD", "value": "PostgreSQL, Oracle" },
+    { "label": "Idiomas", "value": "Inglés (B2 - Intermedio alto), Español (Nativo)"}
+]
