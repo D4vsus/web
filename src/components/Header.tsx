@@ -19,7 +19,7 @@ export default function Header({ theme, onToggleTheme }: Props) {
       </nav>
       <LanguageSelect />
       <button className="ghost" type="button" onClick={onToggleTheme}>
-        {theme === "dark" ? "Tema claro" : "Tema oscuro"}
+        {theme === "dark" ? t('lightTheme') : t('darkTheme')}
       </button>
     </header>
   );
