@@ -1,0 +1,35 @@
+[
+  {
+    "title": "JT-2",
+     "description": {
+      "es": "Emulador de terminal montada desde cero con Java Swing.",
+      "en": "Terminal emulator built from scratch with Java Swing."
+    },
+    "stack": "Java",
+    "year": 2024,
+    "categories": "Desktop-dev",
+    "url": "https://github.com/D4vsus/JT-2"
+  },
+  {
+    "title": "MNIST",
+    "description": {
+      "es": "Reconocimiento de números escritos a mano por medio de redes convolucionales.",
+      "en": "Handwritten digit recognition using convolutional networks."
+    },
+    "stack": "Java(Front), Python(Back)",
+    "year": 2025,
+    "categories": "Data-Mining",
+    "url": "https://github.com/D4vsus/mnist-example"
+  },
+  {
+    "title": "Seal-Translator",
+    "description": {
+      "es": "Conversor de archivos de CSV a ARFF, y vista y manipulación de datasets.",
+      "en": "CSV to ARFF file converter, with dataset viewing and manipulation."
+    },
+    "stack": "Java",
+    "year": 2025,
+    "categories": ["Data-Mining", "Herramientas"],
+    "url": "https://github.com/D4vsus/Seal-Translator"
+  }
+]

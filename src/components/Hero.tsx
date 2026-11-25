@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { useInk } from "../hooks/useInk";
+import { useTranslation } from "react-i18next";
 
 interface Props {
   lines: string[];
@@ -10,6 +11,8 @@ interface Props {
 export default function Hero({ lines, role, email }: Props) {
   const nameRef = useRef<HTMLHeadingElement>(null);
   useInk(nameRef);
+
+  const { t } = useTranslation('translation', { keyPrefix: 'hero' });
 
   return (
     <section className="hero">
@@ -25,12 +28,12 @@ export default function Hero({ lines, role, email }: Props) {
             ))}
           </h1>
         </div>
-        <img className="logo" alt="D4" src={`${import.meta.env.BASE_URL}favicon.svg`}></img>
+        <img className="logo" alt="D4" aria-label="D4 logo" src={`${import.meta.env.BASE_URL}favicon.svg`}></img>
       </div>
       <p className="role">{role}</p>
       <div className="actions">
-        <a className="btn" href="#proyectos">Ver proyectos</a>
-        <a href={"mailto:" + email}>Escríbeme</a>
+        <a className="btn" href="#proyectos">{t('viewProjects')}</a>
+        <a href={"mailto:" + email}>{t('writeMe')}</a>
       </div>
     </section>
   );

@@ -6,10 +6,17 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useTheme } from "./hooks/useTheme";
-import { PROFILE, CATS, PROJECTS } from "./data/content";
+import { CATS, getProfile } from "./data/content";
+import { Project, Skill } from "./types";
+import PROJECTS from "./data/projects.json";
+import SKILLS from "./data/skills.json";
+import { useTranslation } from "react-i18next";
 
 export default function App() {
   const [theme, toggleTheme] = useTheme();
+
+  const { t } = useTranslation();
+  const PROFILE = getProfile(t);
 
   return (
     <div>
@@ -18,8 +25,8 @@ export default function App() {
         <Header theme={theme} onToggleTheme={toggleTheme} />
         <main>
           <Hero lines={PROFILE.lines} role={PROFILE.role} email={PROFILE.email} />
-          <Projects projects={PROJECTS} cats={CATS} />
-          <About paragraphs={PROFILE.about} skills={PROFILE.skills} />
+          <Projects projects={PROJECTS as Project[]} cats={CATS} />
+          <About paragraphs={PROFILE.about} skills={SKILLS as Skill[]} />
           <Contact email={PROFILE.email} links={PROFILE.links} />
         </main>
         <Footer name={PROFILE.lines.join(" ")} />

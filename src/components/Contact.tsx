@@ -1,5 +1,6 @@
 import type { Link } from "../types";
 import Icon from "../icons/DescargaCv"
+import { useTranslation } from "react-i18next";
 
 interface Props {
   email: string;
@@ -7,9 +8,11 @@ interface Props {
 }
 
 export default function Contact({ email, links }: Props) {
+  const { t } = useTranslation('translation', { keyPrefix: 'contact' });
+
   return (
     <section className="sec" id="contacto">
-      <h2 className="h2">Contacto</h2>
+      <h2 className="h2">{t('contact')}</h2>
       <a className="mail" href={"mailto:" + email}>{email}</a>
       
       <div className="social">
@@ -28,8 +31,8 @@ export default function Contact({ email, links }: Props) {
           className="icon-btn"
           href={`${ import.meta.env.BASE_URL }cv-david-fernandez.pdf`}
           download
-          aria-label="Descargar CV"
-          title="Descargar CV"
+          aria-label={t('downloadCv')}
+          title={t('downloadCv')}
         >
           <Icon size={33} className="icon" />
         </a>
